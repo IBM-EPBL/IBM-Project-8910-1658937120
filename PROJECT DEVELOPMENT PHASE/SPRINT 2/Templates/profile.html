@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='style.css') }}"
+    />
+  </head>
+  <body>
+   
+    <div class="card">
+      <h1>Profile</h1>
+      <div class="container">
+      <label for="uname"><b>UserName          :</b></label>
+      <input type="text" placeholder="name" name="uname" required>
+     </div>
+      <br>
+      <div>
+      <label>Email         : </label>  
+      <input type="email" id="email" name="email"/> 
+      <br> 
+      </div>
+      <br>
+    
+      <a href="/home"><button>Back to Home</button></a>
+      <br />
+      <br>
+      <strong>{{msg}}</strong>
+    </div>
+    <div class="nav-links">
+      <ul> 
+         <a href="password change.html">Password change</a>
+      </ul>
+    </div>
+  
+  </body>
+</html>
